@@ -14,23 +14,14 @@ export default defineConfig({
     // 主题配置
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
+        // 顶部导航
         nav: [
             {text: 'Home', link: '/'},
-            {text: 'Examples', link: '/examples/markdown-examples'},
-            {text: '插件', link: '/plugin/videoPlayer'},
+            {text: '插件', link: '/plugin/'},
+            {text: "extensions", link: '/extensions/'},
         ],
-
+        // 侧边栏
         sidebar: {
-            "/examples/": [
-                {
-                    text: 'Examples',
-                    items:
-                        [
-                            {text: 'Markdown Examples', link: '/examples/markdown-examples'},
-                            {text: 'Runtime API Examples', link: '/examples/api-examples'}
-                        ]
-                }
-            ],
             "/plugin/": [{
                 text: '插件',
                 items: [
@@ -42,14 +33,23 @@ export default defineConfig({
             }]
 
         },
-
+        // 仓库地址
         socialLinks: [
             {icon: 'github', link: 'https://github.com/pan52yu'}
         ],
-
+        // 页脚
         footer: {
             message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
             copyright: 'Copyright © 2023-present <a href="https://github.com/pan52yu">Evan Sky</a>'
-        }
+        },
+        // 搜索配置
+        search: {
+            provider: 'local'
+        },
+    },
+    // markdown 配置
+    markdown: {
+        // 代码块显示行号
+        lineNumbers: true
     }
 })
