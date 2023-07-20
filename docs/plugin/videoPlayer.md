@@ -31,7 +31,7 @@ description: 好用的视频播放器
 
 > `npm包 5.3 MB`
 
-> ::: details
+::: details
 **Features 特征**
 > 
 > - 📼 HTML 视频和音频、YouTube 和 Vimeo - 支持主要格式
