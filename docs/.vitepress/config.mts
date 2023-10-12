@@ -32,15 +32,21 @@ export default defineConfig({
         ],
         // 侧边栏
         sidebar: {
-            "/guide/": [{
-                text: '指南',
-                items: [
-                    {
-                        text: "快速上手",
-                        link: '/guide/start'
-                    }
-                ]
-            }],
+            "/guide/": [
+                {
+                    text: '指南',
+                    items: [
+                        {
+                            text: "快速上手",
+                            link: '/guide/start'
+                        },
+                        {
+                            text: ".vscode文件夹详解",
+                            link: '/guide/vscode'
+                        }
+                    ]
+                }
+            ],
             "/plugin/": [{
                 text: '插件',
                 items: [
