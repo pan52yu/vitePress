@@ -14,7 +14,7 @@ export default defineConfig({
     // 主题配置
     themeConfig: {
         logo: "/sky.png",
-        outline: 2,
+        outline: [2, 3],
         // https://vitepress.dev/reference/default-theme-config
         // 顶部导航
         nav: [
@@ -43,6 +43,10 @@ export default defineConfig({
                         {
                             text: ".vscode文件夹详解",
                             link: '/guide/vscode'
+                        },
+                        {
+                            text: "插件",
+                            link: '/guide/plugins'
                         }
                     ]
                 }
