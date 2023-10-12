@@ -18,7 +18,5 @@ features:
     details: 基于Vue3、Vite、Element-Plus、TypeScript、Pinia、UnoCss等最新技术栈开发
   - title: 🤙 简易上手内置丰富组件工具函数
     details: 使用单文件组件语法<script setup>，提供了很多丰富的开箱即用的组件和工具库
-  - title: 📦 无需配置，开箱即用
-    details: 无需配置，开箱即用，只需一个命令即可启动项目，无需复杂的配置
 ---
 
