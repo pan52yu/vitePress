@@ -21,6 +21,7 @@ title: extensions
 ## Links  链接
 
 #### 内部链接
+##### test
 [Plugin](../plugin/videoPlayer.md)
 
 ```markdown

@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /plugin/
+      link: /guide/start
     - theme: alt
       text: 在线预览
       link: https://github.com/pan52yu/vue-sky-admin

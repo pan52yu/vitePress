@@ -13,14 +13,34 @@ export default defineConfig({
     lastUpdated: true,
     // 主题配置
     themeConfig: {
+        logo: "/sky.png",
+        outline: 2,
         // https://vitepress.dev/reference/default-theme-config
         // 顶部导航
         nav: [
+            {
+                text: '指南',
+                items: [
+                    {
+                        text: "快速上手",
+                        link: '/guide/start'
+                    }
+                ]
+            },
             {text: '插件', link: '/plugin/'},
             {text: "extensions", link: '/extensions/'},
         ],
         // 侧边栏
         sidebar: {
+            "/guide/": [{
+                text: '指南',
+                items: [
+                    {
+                        text: "快速上手",
+                        link: '/guide/start'
+                    }
+                ]
+            }],
             "/plugin/": [{
                 text: '插件',
                 items: [
