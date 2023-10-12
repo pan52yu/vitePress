@@ -4,9 +4,9 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
     lang: "zh-CN",
     // 标题
-    title: "evan-sky",
+    title: "Sky Admin Doc",
     // 描述
-    description: "A VitePress Site",
+    description: "后台管理系统模版",
     // URL中删除 .html
     cleanUrls: true,
     // 上次更新时间
@@ -16,7 +16,6 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         // 顶部导航
         nav: [
-            {text: 'Home', link: '/'},
             {text: '插件', link: '/plugin/'},
             {text: "extensions", link: '/extensions/'},
         ],
@@ -30,17 +29,34 @@ export default defineConfig({
                         link: '/plugin/videoPlayer'
                     }
                 ]
+            }],
+            "/extensions/": [{
+                text: 'extensions',
+                items: [
+                    {
+                        text: "index",
+                        link: '/extensions/'
+                    },
+                    {
+                        text: "api",
+                        link: '/extensions/api-examples'
+                    },
+                    {
+                        text: "markdown",
+                        link: '/extensions/markdown-examples'
+                    }
+                ]
             }]
 
         },
         // 仓库地址
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/pan52yu'}
+            {icon: 'github', link: 'https://github.com/pan52yu/vue-sky-admin'}
         ],
         // 页脚
         footer: {
             message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
-            copyright: 'Copyright © 2023-present <a href="https://github.com/pan52yu">Evan Sky</a>'
+            copyright: 'Copyright © 2023-present <a href="https://github.com/pan52yu/vue-sky-admin">Evan Sky</a>'
         },
         // 搜索配置
         search: {
