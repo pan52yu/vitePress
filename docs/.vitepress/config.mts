@@ -7,7 +7,7 @@ export default defineConfig({
   lang: "zh-CN",
   title: "法典",
   // URL中删除 .html
-  cleanUrls: true,
+//   cleanUrls: true,
   // 上次更新时间
   lastUpdated: false,
 
