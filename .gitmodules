@@ -1,0 +1,3 @@
+[submodule "docs/laws"]
+	path = docs/laws
+	url = https://github.com/pan52yu/Laws.git
