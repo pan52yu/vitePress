@@ -6,6 +6,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "@types/node": "^20.10.5",
     "flexsearch": "^0.7.31",
     "vitepress": "1.0.0-rc.20",
     "vitepress-plugin-search": "1.0.4-alpha.21"

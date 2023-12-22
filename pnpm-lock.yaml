@@ -5,12 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@types/node':
+    specifier: ^20.10.5
+    version: 20.10.5
   flexsearch:
     specifier: ^0.7.31
     version: 0.7.31
   vitepress:
     specifier: 1.0.0-rc.20
-    version: registry.npmmirror.com/vitepress@1.0.0-rc.20
+    version: registry.npmmirror.com/vitepress@1.0.0-rc.20(@types/node@20.10.5)
   vitepress-plugin-search:
     specifier: 1.0.4-alpha.21
     version: 1.0.4-alpha.21(flexsearch@0.7.31)(vitepress@1.0.0-rc.20)(vue@3.3.4)
@@ -265,6 +268,12 @@ packages:
     resolution: {integrity: sha512-T5k6kTXak79gwmIOaDF2UUQXFbnBE0zBUzF20pz7wDYu0RQMzWg+Ml/Pz50214NsFHBITkoi5VtdjFZnJ2ijjA==}
     dev: true
 
+  /@types/node@20.10.5:
+    resolution: {integrity: sha512-nNPsNE65wjMxEKI93yOP+NPGGBJz/PoN3kZsVLee0XMiJolxSekEVD8wRwBUBqkwc7UWop0edW50yrCQW4CyRw==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
   /@vue/compiler-core@3.3.4:
     resolution: {integrity: sha512-cquyDNvZ6jTbf/+x+AgM2Arrp6G4Dzbb0R64jiG804HRMfRiFXWI6kqUVqZ6ZR0bQhIoQjB4+2bhNtVwndW15g==}
     dependencies:
@@ -442,6 +451,10 @@ packages:
     resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
     dev: true
 
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: true
+
   /vitepress-plugin-search@1.0.4-alpha.21(flexsearch@0.7.31)(vitepress@1.0.0-rc.20)(vue@3.3.4):
     resolution: {integrity: sha512-UBkvbQtr3U8EpVWyuyd4FXAbx5I7GkKIGgObaM3BFIHCpLEjJrRZoifFQBdjZ7sZGM2OrjrgjA0W8gWKAiZ3qA==}
     engines: {node: ^14.13.1 || ^16.7.0 || >=18}
@@ -455,7 +468,7 @@ packages:
       flexsearch: 0.7.31
       glob-to-regexp: 0.4.1
       markdown-it: 13.0.2
-      vitepress: registry.npmmirror.com/vitepress@1.0.0-rc.20
+      vitepress: registry.npmmirror.com/vitepress@1.0.0-rc.20(@types/node@20.10.5)
       vue: 3.3.4
     dev: true
 
@@ -1139,8 +1152,9 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  registry.npmmirror.com/vite@4.4.11:
+  registry.npmmirror.com/vite@4.4.11(@types/node@20.10.5):
     resolution: {integrity: sha512-ksNZJlkcU9b0lBwAGZGGaZHCMqHsc8OpgtoYhsQ4/I2v5cnpmmmqe5pM4nv/4Hn6G/2GhTdj0DhZh2e+Er1q5A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite/-/vite-4.4.11.tgz}
+    id: registry.npmmirror.com/vite/4.4.11
     name: vite
     version: 4.4.11
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -1169,6 +1183,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.10.5
       esbuild: registry.npmmirror.com/esbuild@0.18.13
       postcss: registry.npmmirror.com/postcss@8.4.31
       rollup: registry.npmmirror.com/rollup@3.29.4
@@ -1176,8 +1191,9 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  registry.npmmirror.com/vitepress@1.0.0-rc.20:
+  registry.npmmirror.com/vitepress@1.0.0-rc.20(@types/node@20.10.5):
     resolution: {integrity: sha512-CykMUJ8JLxLcGWek0ew3wln4RYbsOd1+0YzXITTpajggpynm2S331TNkJVOkHrMRc6GYe3y4pS40GfgcW0ZwAw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vitepress/-/vitepress-1.0.0-rc.20.tgz}
+    id: registry.npmmirror.com/vitepress/1.0.0-rc.20
     name: vitepress
     version: 1.0.0-rc.20
     hasBin: true
@@ -1200,7 +1216,7 @@ packages:
       mark.js: registry.npmmirror.com/mark.js@8.11.1
       minisearch: registry.npmmirror.com/minisearch@6.1.0
       shiki: registry.npmmirror.com/shiki@0.14.5
-      vite: registry.npmmirror.com/vite@4.4.11
+      vite: registry.npmmirror.com/vite@4.4.11(@types/node@20.10.5)
       vue: registry.npmmirror.com/vue@3.3.4
     transitivePeerDependencies:
       - '@algolia/client-search'
